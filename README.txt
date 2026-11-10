@@ -1,0 +1,1 @@
+ZARIVA website bundle. Upload this ZIP as a new Netlify deploy. Keep index.html, all category HTML pages, and image files together in the site root. Every main category opens its own collection page. Product cards marked Coming Soon are placeholders until affiliate product links are supplied.

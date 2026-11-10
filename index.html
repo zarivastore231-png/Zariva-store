@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fbf3ee">
+<title>ZARIVA | The Style Destination</title>
+<meta name="description" content="Discover handpicked fashion, beauty, skincare, jewellery and lifestyle finds at Zariva.">
+<style>
+:root{--cream:#fbf3ee;--paper:#fffdfa;--rose:#b66e78;--rose2:#e8c4bd;--wine:#54232e;--ink:#3e2528;--muted:#876e6c;--gold:#bd9568}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}
+.announcement{background:var(--wine);color:#fff;text-align:center;padding:10px 12px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+header{position:sticky;top:0;z-index:10;background:#fffdfaef;backdrop-filter:blur(12px);border-bottom:1px solid #eadbd4}.nav{max-width:1200px;margin:auto;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font-family:Georgia,serif;font-size:34px;letter-spacing:5px;color:var(--wine);font-weight:600;text-align:center}.logo span{display:block;font:9px Arial,sans-serif;letter-spacing:3px;margin-top:5px;color:var(--muted)}
+nav{display:flex;align-items:center;gap:21px;font-size:12px;letter-spacing:.7px;text-transform:uppercase}nav a:hover{color:var(--rose)}.navbtn,.btn{display:inline-block;background:var(--wine);color:white;padding:13px 20px;border-radius:2px;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;transition:.2s}.navbtn:hover,.btn:hover{background:var(--rose)}
+.hero{max-width:1440px;margin:auto;display:grid;grid-template-columns:48% 52%;min-height:520px;background:#f3e2db}.hero-copy{padding:75px max(28px,calc((100vw - 1160px)/2));padding-right:30px;align-self:center}.eyebrow{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--rose)}h1{font:normal clamp(48px,6vw,82px)/.98 Georgia,serif;color:var(--wine);margin:19px 0}.hero-copy p{font:16px/1.8 Georgia,serif;color:#73585a;max-width:410px;margin:0 0 22px}.hero-photo{min-height:520px;position:relative}.hero-photo img{object-position:center 35%}.hero-tag{position:absolute;right:24px;bottom:24px;background:#fffdfaeb;padding:15px 20px;color:var(--wine);font:italic 18px Georgia,serif}
+.wrap{max-width:1200px;margin:auto;padding:64px 24px}.section-head{text-align:center;margin:0 0 30px}.section-head .eyebrow{margin-bottom:10px}.section-head h2{font:normal 38px Georgia,serif;color:var(--wine);margin:0}.section-head p{font:italic 14px Georgia,serif;color:var(--muted);margin:9px 0 0}
+.categories{display:grid;grid-template-columns:repeat(7,1fr);gap:15px}.cat{text-align:center}.cat-img{height:145px;overflow:hidden;background:#f3e2db;margin-bottom:13px}.cat-img img{transition:transform .35s}.cat:hover img{transform:scale(1.06)}.cat strong{font:16px Georgia,serif;color:var(--wine)}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:55px}.feature-card{min-height:300px;position:relative;overflow:hidden;background:#ead3ca}.feature-card img{position:absolute;inset:0;filter:brightness(.78)}.feature-copy{position:absolute;left:30px;bottom:28px;color:white}.feature-copy small{letter-spacing:2px;text-transform:uppercase;font-size:10px}.feature-copy h3{font:36px Georgia,serif;margin:8px 0 14px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:#fff;border:1px solid #eee1db}.product-photo{height:260px;background:#f4e8e2;overflow:hidden}.product-photo img{transition:transform .35s}.product:hover img{transform:scale(1.04)}.product-info{text-align:center;padding:16px 12px 19px}.product-info h3{font:17px Georgia,serif;margin:0 0 7px;color:var(--wine)}.product-info p{font-size:11px;color:var(--muted);margin:0 0 14px;line-height:1.5}.product-info .btn{padding:11px 17px}
+.disclosure{font-size:11px;line-height:1.6;color:#8c7773;text-align:center;padding:18px 22px;background:#fbf3ee}
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;border-top:1px solid #eadbd4;border-bottom:1px solid #eadbd4;padding:27px 0;text-align:center}.benefits b{display:block;font:16px Georgia,serif;color:var(--wine);margin-bottom:7px}.benefits span{font-size:11px;color:var(--muted)}
+footer{background:#f0dcd5;padding:48px 24px;text-align:center}.footer-logo{font:32px Georgia,serif;letter-spacing:5px;color:var(--wine)}footer p{font:italic 14px Georgia,serif;color:#76585a}.social{display:flex;justify-content:center;gap:24px;margin-top:20px;font-size:12px;color:var(--wine)}
+@media(max-width:850px){nav{display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:55px 26px 38px}.hero-photo{min-height:360px}.categories{grid-template-columns:repeat(4,1fr)}.cat-img{height:125px}.products{grid-template-columns:repeat(2,1fr)}.product-photo{height:220px}}
+@media(max-width:480px){.nav{padding:13px 16px}.logo{font-size:28px}.navbtn{padding:11px 13px;font-size:9px}.hero-photo{min-height:300px}.wrap{padding:48px 16px}.categories{grid-template-columns:repeat(2,1fr);gap:20px 12px}.cat-img{height:160px}.section-head h2{font-size:32px}.feature{grid-template-columns:1fr}.feature-card{min-height:245px}.products{gap:10px}.product-photo{height:175px}.product-info h3{font-size:15px}.benefits{grid-template-columns:repeat(2,1fr);row-gap:22px}}
+</style>
+</head>
+<body>
+<div class="announcement">A little style, a little glow — discover your next favourite find</div>
+<header><div class="nav">
+<a class="logo" href="#">ZARIVA<span>THE STYLE DESTINATION</span></a>
+<nav><a href="#home">Home</a><a href="#categories">Categories</a><a href="#bestsellers">Best Picks</a><a href="#about">About</a></nav>
+<a class="navbtn" href="#bestsellers">Explore the Edit</a>
+</div></header>
+<main id="home">
+<section class="hero">
+<div class="hero-copy"><div class="eyebrow">Fashion • Beauty • Lifestyle</div><h1>Style that<br><i>speaks.</i></h1><p>Discover thoughtfully picked fashion, beauty and everyday essentials that make your personal style feel uniquely yours.</p><a class="btn" href="#categories">Discover the Collection&nbsp; →</a></div>
+<div class="hero-photo"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85" alt="Fashion editorial portrait"><div class="hero-tag">Find your everyday elegance</div></div>
+</section>
+<section class="wrap" id="categories">
+<div class="section-head"><div class="eyebrow">Explore Zariva</div><h2>Shop by Category</h2><p>Little discoveries, lovely details</p></div>
+<div class="categories">
+<a class="cat" href="clothing.html"><div class="cat-img"><img src="evanora-floral-tunic-palazzos.jpg" alt="Clothing"></div><strong>Clothing</strong></a>
+<a class="cat" href="handbags.html"><div class="cat-img"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=500&q=80" alt="Handbags"></div><strong>Handbags</strong></a>
+<a class="cat" href="jewellery.html"><div class="cat-img"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=500&q=80" alt="Jewellery"></div><strong>Jewellery</strong></a>
+<a class="cat" href="beauty.html"><div class="cat-img"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=500&q=80" alt="Beauty"></div><strong>Beauty</strong></a>
+
+<a class="cat" href="skin-care.html"><div class="cat-img"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=500&q=80" alt="Skin care"></div><strong>Skin Care</strong></a>
+<a class="cat" href="trending-picks.html"><div class="cat-img"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=500&q=80" alt="Trending picks" onerror="this.src='https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=500&q=80'"></div><strong>Trending Picks</strong></a>
+</div>
+<div class="feature">
+<div class="feature-card"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Casual fashion"><div class="feature-copy"><small>Everyday favourites</small><h3>Casual, yet chic</h3><a class="btn" href="casual-wear.html">Shop Casual Wear</a></div></div>
+<div class="feature-card"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=80" alt="Skincare products"><div class="feature-copy"><small>Your daily ritual</small><h3>Glow with care</h3><a class="btn" href="skin-care.html">Explore Skin Care</a></div></div>
+</div>
+</section>
+<section class="wrap" id="bestsellers" style="padding-top:10px">
+<div class="section-head"><div class="eyebrow">The Zariva edit</div><h2>Our Best Picks</h2><p>Replace these sample links with your own affiliate links</p></div>
+<div class="products">
+<article class="product"><div class="product-photo"><img src="evanora-floral-tunic-palazzos.jpg" alt="Evanora cream floral printed tunic with matching palazzo pants"></div><div class="product-info"><h3>EVANORA Floral Printed Tunic with Palazzos</h3><p>Floral printed tunic with matching palazzo pants</p><a class="btn" href="https://myntr.it/r8INBFM" target="_blank" rel="sponsored noopener">Shop Now →</a></div></article>
+<article class="product"><div class="product-photo"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" alt="Handbag"></div><div class="product-info"><h3>Chic Handbags</h3><p>Carry your style everywhere</p><a class="btn" href="ADD_AFFILIATE_LINK_2" target="_blank" rel="sponsored noopener">Shop Now →</a></div></article>
+<article class="product"><div class="product-photo"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80" alt="Jewellery"></div><div class="product-info"><h3>Statement Jewellery</h3><p>Beautiful finishing touches</p><a class="btn" href="ADD_AFFILIATE_LINK_3" target="_blank" rel="sponsored noopener">Shop Now →</a></div></article>
+<article class="product"><div class="product-photo"><img src="maybelline-baby-lips.png" alt="Maybelline Baby Lips Color Lip Balm"></div><div class="product-info"><h3>Maybelline Baby Lips Color Lip Balm</h3><p>Moisturizing lip balm with a natural tint</p><a class="btn" href="https://myntr.it/Unsoyr3" target="_blank" rel="sponsored noopener">Shop Now →</a></div></article>
+<article class="product"><div class="product-photo"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" alt="Casual outfit"></div><div class="product-info"><h3>Casual Wear</h3><p>Easy looks for everyday moments</p><a class="btn" href="ADD_AFFILIATE_LINK_5" target="_blank" rel="sponsored noopener">Shop Now →</a></div></article>
+<article class="product"><div class="product-photo"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80" alt="Skin care products"></div><div class="product-info"><h3>Skin Care Favourites</h3><p>Little rituals for your skin</p><a class="btn" href="ADD_AFFILIATE_LINK_6" target="_blank" rel="sponsored noopener">Shop Now →</a></div></article>
+<article class="product"><div class="product-photo"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=80" alt="Fashion edit"></div><div class="product-info"><h3>Trending Picks</h3><p>Fresh finds worth a look</p><a class="btn" href="ADD_AFFILIATE_LINK_7" target="_blank" rel="sponsored noopener">Shop Now →</a></div></article>
+<article class="product"><div class="product-photo"><img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=700&q=80" alt="Perfume"></div><div class="product-info"><h3>Little Luxuries</h3><p>Thoughtful touches for your day</p><a class="btn" href="ADD_AFFILIATE_LINK_8" target="_blank" rel="sponsored noopener">Shop Now →</a></div></article>
+</div>
+</section>
+<section class="wrap" id="about" style="padding-top:5px"><div class="benefits"><div><b>✦ Thoughtfully Curated</b><span>Finds selected with care</span></div><div><b>♡ Easy Shopping</b><span>Shop securely at the retailer</span></div><div><b>✧ Fresh Discoveries</b><span>New picks added regularly</span></div><div><b>❀ Your Style, Your Way</b><span>Ideas for every day</span></div></div></section>
+</main>
+<footer><div class="footer-logo">ZARIVA</div><p>Style That Speaks.</p><p>Follow for fresh finds, style inspiration and new discoveries.</p><div class="social"><a href="#">Instagram</a><a href="#">Pinterest</a></div></footer>
+<div class="disclosure">Disclosure: Zariva may earn a commission when you shop through eligible affiliate links, at no extra cost to you. Product prices, availability and terms are shown by the retailer. Images are illustrative and load from Unsplash when connected to the internet.</div>
+</body></html>
